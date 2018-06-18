@@ -1,3 +1,6 @@
 .stack-work/
-Spock-rest.cabal
 *~
+
+*.db
+*.db-shm
+*.db-wal
