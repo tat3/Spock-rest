@@ -1,8 +1,8 @@
 name:                Spock-rest
 version:             0.1.0.0
-github:              "githubuser/Spock-rest"
-license:             BSD3
-author:              "Author name here"
+github:              "tat3/Spock-rest"
+license:             MIT
+author:              "tat"
 maintainer:          "example@example.com"
 copyright:           "2018 Author name here"
 
@@ -17,11 +17,19 @@ extra-source-files:
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
 # common to point users to the README.md file.
-description:         Please see the README on GitHub at <https://github.com/githubuser/Spock-rest#readme>
+description:         Please see the README on GitHub at <https://github.com/tat3/Spock-rest#readme>
 
 dependencies:
 - base >= 4.7 && < 5
-
+- aeson
+- Spock
+- text
+- monad-logger
+- persistent
+- persistent-sqlite
+- persistent-template
+- wai
+ 
 library:
   source-dirs: src
 
@@ -46,3 +54,6 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - Spock-rest
+    - hspec
+    - hspec-wai
+
