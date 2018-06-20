@@ -31,7 +31,9 @@ dependencies:
 - wai
  
 library:
-  source-dirs: src
+  source-dirs: 
+  - src
+  - app
 
 executables:
   Spock-rest-exe:
